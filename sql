@@ -102,3 +102,12 @@ mysql> select codesess,count( typecours = 'distanciel') as nbr_distanciel,count(
 |     1501 |              7 |              7 |
 +----------+----------------+----------------+
 5 rows in set (0.00 sec)
+
+mysql> SELECT SUM(prixForm) AS cout_total
+    -> FROM formation;
++------------+
+| cout_total |
++------------+
+|      23050 |
++------------+
+1 row in set (0.00 sec)
